@@ -1,0 +1,153 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+
+import SocialPill from '../components/SocialPill.astro';
+import LanguagePill from '../components/LanguagePill.astro';
+
+import GitHub from '../components/icons/GitHub.astro';
+import LinkedIn from '../components/icons/LinkedIn.astro';
+import Mail from '../components/icons/Mail.astro';
+import BriefCase from '../components/icons/BriefCase.astro';
+import Code from '../components/icons/Code.astro';
+import PHP from '../components/icons/PHP.astro';
+import JS from '../components/icons/JS.astro';
+import CSS from '../components/icons/CSS.astro';
+import SQL from '../components/icons/SQL.astro';
+import HTML from '../components/icons/HTML.astro';
+import Symfonyicon from '../components/icons/Symfonyicon.astro';
+import Laravelicon from '../components/icons/Laravelicon.astro';
+import Astroicon from '../components/icons/Astroicon.astro';
+import Bootstrapicon from '../components/icons/Bootstrapicon.astro';
+import Reacticon from '../components/icons/Reacticon.astro';
+import Tailwindicon from '../components/icons/Tailwindicon.astro';
+import Vuejsicon from '../components/icons/Vuejsicon.astro';
+
+import Experiencie from '../components/Experiencie.astro';
+import Projects from '../components/Projects.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+---
+
+<Layout title="Portfolio EzeMartinez - Desarrollador Web"
+		description="Programador y Desarrollador Web, Mi objetivo es crear experiencias digitales impactantes y funcionales que cautiven a los usuarios y cumplan con los objetivos del proyecto.">
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-32">
+			<!-- <img 
+				class="rounded-full size-12 mb-4" 
+				src="https://e7.pngegg.com/pngimages/73/928/png-clipart-web-development-logo-computer-programming-design-trademark-logo.png"
+			/> -->
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+				Eze Martinez
+				<a 
+					href="https://www.linkedin.com/in/ezequiel-martinez-742445261/" 
+					target="_blank" 
+					rel="noopener" 
+					class="flex justify-center items-center"
+				>
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+				<a 
+					href="https://drive.google.com/file/d/1yyyQF2o4v-z7f63uyjOW7bPa5Vh3L0ar/view?usp=drive_link" 
+					target="_blank" 
+					rel="noopener" 
+					class="flex justify-center items-center"
+				>
+					<Badge>Descargar CV</Badge>
+				</a>
+			</h1>
+
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+				<span>Experiencia de 2 años</span> en el mundo del <span class="opacity-80 text-yellow-200">Desarrollo Web</span>. De Córdoba, Argentina
+			</h2>
+			
+			<nav class="flex flex-wrap gap-4 md:gap-8 mt-8">
+				<SocialPill href="https://www.linkedin.com/in/ezequiel-martinez-742445261/">
+					<LinkedIn class="size-4 md:size-6"/>
+					LinkedIn
+				</SocialPill>
+
+				<SocialPill href="https://github.com/MartinezEzequielG">
+					<GitHub class="size-4 md:size-6"/>
+					GitHub
+				</SocialPill>
+				
+				<SocialPill href="mailto:ezemartinezperkapita@gmail.com">
+					<Mail class="size-4 md:size-6"/>
+					ezemartinezperkapita@gmail.com
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+
+		<SectionContainer id="experiencie">
+			<h2 class="text-3xl font-bold mb-6 flex gap-x-3 items-center">
+				<BriefCase class="sm:size-4 md:size-6"/>
+				Experiencia Laboral
+			</h2>
+			<Experiencie/>
+		</SectionContainer>
+
+		<SectionContainer id="language">
+			<h2 class="text-3xl font-bold mb-6 flex gap-x-3 items-center">
+				<Code class="sm:size-4 md:size-7"/>
+				Lenguajes
+			</h2>
+			<h3 class="flex flex-wrap gap-4 md:gap-8 mt-8">
+				<LanguagePill>
+					<PHP class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<JS class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<CSS class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<SQL class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<HTML class="sm:size-4 md:size-7"/>	
+				</LanguagePill>
+			</h3>
+		</SectionContainer>
+
+		<SectionContainer>
+			<h2 class="text-3xl font-bold mb-6 flex gap-x-3 items-center">
+				<Code class="sm:size-4 md:size-7"/>
+				Frameworks
+			</h2>
+			<h3 class="flex flex-wrap gap-4 md:gap-8 mt-8">
+				<LanguagePill>
+					<Symfonyicon class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<Laravelicon class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<Astroicon class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<Bootstrapicon class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<Reacticon class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<Tailwindicon class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+				<LanguagePill>
+					<Vuejsicon class="sm:size-4 md:size-7"/>
+				</LanguagePill>
+			</h3>
+		</SectionContainer>
+
+<!-- 
+		<SectionContainer id="proyect">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<Code class="size-7"/>
+				Proyectos
+			</h2>
+			<Projects/>
+		</SectionContainer> -->
+
+	</main>
+</Layout>

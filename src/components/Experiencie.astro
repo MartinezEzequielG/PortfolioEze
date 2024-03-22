@@ -1,0 +1,36 @@
+---
+import ExperiencieItem from "./ExperiencieItem.astro"
+const EXPERIENCIE = [
+    {
+        date: "Actualmente...",
+        title: "Desarrollador Backend",
+        description:
+            "Como desarrollador Backend, mi enfoque se centra en la implementación de la lógica y la funcionalidad detrás de las aplicaciones web. Con un enfoque particular en el uso de PHP, aprovecho esta tecnología robusta y flexible para construir sistemas eficientes y escalables. Mi experiencia en el desarrollo Backend me permite diseñar y mantener servidores y bases de datos, así como implementar API's y servicios web que impulsan la funcionalidad de las aplicaciones.",
+
+    },
+    {
+        date: "Actualmente...",
+        title: "Freelance",
+        description:
+            "Como freelancer especializado en el desarrollo completo, actualmente me dedico a diseñar y desarrollar sitios web estáticos. Con experiencia y habilidades técnicas sólidas, empleo tecnologías innovadoras como Astro para crear sitios web que no solo sean visualmente atractivos, sino también altamente funcionales y eficientes.",
+
+    },
+    {
+        date: "Nov-2023 / Mar-2024",
+        title: "Full Stack",
+        description:
+            "Demostrada capacidad para contribuir al diseño, implementación y mantenimiento de aplicaciones web dinámicas y eficientes. Experiencia práctica en la resolución de desafíos de programación, así como en la colaboración efectiva con equipos multidisciplinarios.",
+
+    },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">                  
+    {
+        EXPERIENCIE.map((experiencie) => (
+            <li class="mb-10 ms-4">
+                <ExperiencieItem {...experiencie} />    
+            </li>
+        ))
+    }
+</ol>
